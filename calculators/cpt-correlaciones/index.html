@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CPT Calculator — qc, fs, u2 to Geotechnical Parameter</title>
+<meta name="description" content="The Cone Penetration Test (CPT) and its variant with pore pressure measurement (CPTu) provide a continuous record of three variables: tip resistance (qc), ">
+<meta name="theme-color" content="#1a3a2a">
+<link rel="canonical" href="https://soilmechaniclaboratory.com/blog/calculators/cpt-correlaciones/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CPT Calculator — qc, fs, u2 to Geotechnical Parameter">
+<meta property="og:description" content="National soil mechanics laboratory offering geotechnical testing, soil classification, and foundation analysis across major US urban centers.">
+<meta property="og:url" content="https://soilmechaniclaboratory.com/blog/calculators/cpt-correlaciones/">
+<meta property="og:site_name" content="Soil Mechanics Laboratory">
+<meta property="og:image" content="https://soilmechaniclaboratory.com/img/estudio-mecanica-suelos-langen-3.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CPT Calculator — qc, fs, u2 to Geotechnical Parameter Correlations">
+<meta name="twitter:description" content="National soil mechanics laboratory offering geotechnical testing, soil classification, and foundation analysis across major US urban centers.">
+<meta name="twitter:image" content="https://soilmechaniclaboratory.com/img/estudio-mecanica-suelos-langen-3.webp">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Soil Mechanics Laboratory USA", "description": "National soil mechanics laboratory offering geotechnical testing, soil classification, and foundation analysis across major US urban centers.", "url": "https://soilmechaniclaboratory.com/", "areaServed": {"@type": "City", "name": "USA"}, "address": {"@type": "PostalAddress", "addressLocality": "USA", "addressCountry": "USA"}, "email": "contact@soilmechaniclaboratory.com", "priceRange": "$$"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Soil Mechanics Laboratory · Soil Mechanics Laboratory — USA", "url": "https://soilmechaniclaboratory.com/", "description": "National soil mechanics laboratory offering geotechnical testing, soil classification, and foundation analysis across major US urban centers.", "inLanguage": "en", "datePublished": "2026-05-31", "dateModified": "2026-05-31", "isPartOf": {"@type": "WebSite", "url": "https://soilmechaniclaboratory.com/", "name": "Soil Mechanics Laboratory"}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://soilmechaniclaboratory.com/#organization", "name": "Soil Mechanics Laboratory", "url": "https://soilmechaniclaboratory.com/", "logo": "https://soilmechaniclaboratory.com/img/logo.png", "email": "contact@soilmechaniclaboratory.com", "address": {"@type": "PostalAddress", "addressCountry": "USA"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.6, "reviewCount": 34, "bestRating": 5, "worstRating": 1}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://soilmechaniclaboratory.com/#website", "name": "Soil Mechanics Laboratory", "url": "https://soilmechaniclaboratory.com/", "inLanguage": "en", "publisher": {"@id": "https://soilmechaniclaboratory.com/#organization"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://soilmechaniclaboratory.com/?s={search_term_string}"}, "query-input": "required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the purpose of a soil mechanics laboratory?", "acceptedAnswer": {"@type": "Answer", "text": "A soil mechanics laboratory tests soil samples to determine physical and mechanical properties such as strength, compressibility, and permeability. These data are essential for designing foundations, retaining walls, and earthworks, ensuring structures are safe and stable under expected loads."}}, {"@type": "Question", "name": "Which ASTM standards are commonly used in soil testing?", "acceptedAnswer": {"@type": "Answer", "text": "Common ASTM standards include ASTM D1586 for SPT, ASTM D422 for grain size, ASTM D4318 for Atterberg limits, ASTM D698 for Proctor compaction, and ASTM D2850 for unconsolidated-undrained triaxial tests. These ensure consistency and reliability across laboratories."}}, {"@type": "Question", "name": "How does seismic zone affect foundation design?", "acceptedAnswer": {"@type": "Answer", "text": "Seismic zones, defined by ASCE 7, indicate ground motion intensity during earthquakes. Higher zones require stronger foundations, deeper embedment, and sometimes soil improvement to mitigate liquefaction risk. Our laboratory provides dynamic soil properties for seismic analysis."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://soilmechaniclaboratory.com/equipo/james-obrien/#person", "name": "James OBrien", "jobTitle": "Senior Geotechnical Consultant", "image": "https://soilmechaniclaboratory.com/img/headshot_intl_soilmechaniclaboratory-com.webp", "worksFor": {"@type": "Organization", "name": "Soil Mechanics Laboratory", "url": "https://soilmechaniclaboratory.com"}, "url": "https://soilmechaniclaboratory.com/equipo/james-obrien/"}</script>
+
+<meta name="layout" content="L3">
+<link rel="preload" as="image" href="img/estudio-mecanica-suelos-langen-3.webp" fetchpriority="high">
+<style>
+
+:root{
+ --primary:#1a3a2a;
+ --accent:#16a34a;
+ --bg:#f6faf7;
+ --surface:#fff;
+ --text:#16221c;
+ --border:#e2ebe5;
+ --muted:#64748b;
+ --font-body:'Source Sans 3',-apple-system,sans-serif;
+ --font-h:'Source Serif 4',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+/* Prose links — links dentro del contenido principal SIEMPRE visibles (underline + accent) */
+main section.block p a, main section.block li a, .cierre a {
+ color: var(--accent);
+ text-decoration: underline;
+ text-decoration-thickness: 1px;
+ text-underline-offset: 2px;
+ font-weight: 500;
+}
+main section.block p a:hover, main section.block li a:hover, .cierre a:hover {
+ text-decoration-thickness: 2px;
+ color: var(--primary);
+}
+.container{max-width:1400px;margin:0 auto;padding:0 24px}
+header{background:var(--primary);color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+header .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+header .brand-link:hover{text-decoration:none}
+header .logo{flex-shrink:0;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
+header .brand-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;line-height:1.1}
+header .brand-name{font-family:var(--font-h);font-size:1.18rem;font-weight:700;letter-spacing:.02em;color:#fff}
+header .brand-sep{color:#64748b;font-weight:300}
+header .brand-sub{font-size:.78rem;font-weight:400;color:#cbd5e1;letter-spacing:.02em}
+@media(max-width:560px){header .brand-sep,header .brand-sub{display:none}}
+header .navbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+header .nav-link{color:#e2e8f0;padding:8px 14px;border-radius:6px;font-size:.92rem;font-weight:500;transition:background .15s,color .15s;text-decoration:none;background:transparent;border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
+header .nav-link:hover,header .nav-link[aria-expanded="true"]{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
+header .nav-dd{position:relative}
+header .dd-arrow{font-size:.7rem;opacity:.8;transition:transform .15s}
+header .nav-link[aria-expanded="true"] .dd-arrow{transform:rotate(180deg)}
+header .dd-menu{position:absolute;top:calc(100% + 6px);left:0;background:#fff;min-width:240px;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:6px 0;display:none;z-index:1000;border:1px solid rgba(0,0,0,.06)}
+header .nav-dd.open .dd-menu{display:block}
+header .dd-menu a{display:block;padding:10px 18px;color:#1f2937;font-size:.92rem;text-decoration:none;transition:background .12s}
+header .dd-menu a:hover{background:#f3f4f6;color:var(--primary);text-decoration:none}
+header .dd-menu a{display:flex!important;align-items:center;justify-content:space-between;gap:14px}
+header .hub-badge{display:inline-block;background:color-mix(in srgb, var(--accent) 18%, #fff 82%);color:var(--primary);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:11px;line-height:1.4}
+header .nav-burger{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:6px;font-size:1.1rem;cursor:pointer}
+@media(max-width:780px){
+ header .container{flex-wrap:wrap}
+ header .nav-burger{display:inline-block}
+ header .navbar{display:none;width:100%;margin-top:14px;flex-direction:column;align-items:stretch;gap:2px;background:rgba(0,0,0,.15);padding:10px;border-radius:8px}
+ body.nav-open header .navbar{display:flex}
+ header .nav-dd{width:100%}
+ header .dd-menu{position:static;box-shadow:none;background:rgba(255,255,255,.04);border:none;padding:0;margin-top:4px}
+ header .dd-menu a{color:#e2e8f0;padding:8px 18px}
+ header .dd-menu a:hover{background:rgba(255,255,255,.08);color:#fff}
+}
+.hero{background:linear-gradient(180deg,var(--primary) 0%,color-mix(in srgb, var(--primary) 80%, var(--accent) 20%) 100%);color:#fff;padding:36px 0 50px}
+.hero h1{font-family:var(--font-h);font-size:2.1rem;line-height:1.25;font-weight:700;margin-bottom:12px;max-width:1280px}
+.hero p.subtitle{font-size:1.05rem;color:#cbd5e1;max-width:1100px;margin-bottom:18px}
+.breadcrumb{padding:0 0 14px;font-size:.85rem;color:#cbd5e1;background:transparent;border:none}
+.breadcrumb a{color:#93c5fd;text-decoration:none}
+.breadcrumb a:hover{color:#fff;text-decoration:underline}
+.breadcrumb span{color:#fff;font-weight:500}
+.block{background:var(--surface);border-radius:10px;padding:26px 30px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border);overflow:hidden}
+.block::after{content:'';display:table;clear:both}
+h2{font-family:var(--font-h);font-size:1.45rem;color:var(--primary);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+h3{font-family:var(--font-h);font-size:1.1rem;color:var(--primary);margin:14px 0 8px;font-weight:600}
+p{margin-bottom:12px;color:var(--text)}
+/* hero/inline img v3 — float right + cap dimensiones (anti-explotación portrait) */
+section.block{overflow:auto}
+section.block .hero-img-wrap{float:right;max-width:340px;width:340px;max-height:280px;margin:6px 0 16px 24px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block}
+section.block .hero-img-wrap img{max-width:100%;max-height:280px;width:100%;height:280px;object-fit:cover;display:block;border-radius:10px}
+.inline-img{float:right;max-width:300px;width:300px;max-height:220px;margin:6px 0 18px 20px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.inline-img img{max-width:100%;max-height:220px;width:100%;height:220px;object-fit:cover;display:block;border-radius:10px}
+section.block h2{clear:both;margin-top:0}
+@media (max-width:768px){
+ section.block{overflow:visible}
+ section.block .hero-img-wrap{float:none;width:100%;max-width:100%;max-height:240px;margin:18px auto}
+ section.block .hero-img-wrap img{height:240px;max-height:240px}
+ .inline-img{float:none;width:100%;max-width:100%;max-height:220px;margin:18px auto}
+}
+main img:not([class]){max-width:100%;height:auto}
+@media(max-width:680px){.inline-img{float:none;width:100%;max-width:100%;margin:18px auto}}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem;border-radius:6px;overflow:hidden}
+table th{background:var(--primary);color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+table tr:nth-child(even) td{background:color-mix(in srgb, var(--bg) 50%, #f8fafc 50%)}
+.norm-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.norm-list li{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);color:var(--primary);padding:8px 14px;border-radius:6px;border-left:3px solid var(--primary);font-family:ui-monospace,monospace;font-size:.92rem}
+.faq details{background:color-mix(in srgb, var(--bg) 60%, #f8fafc 40%);padding:14px 18px;margin-bottom:8px;border-radius:8px;border-left:3px solid var(--primary)}
+.faq summary{font-weight:600;cursor:pointer;color:var(--primary);font-size:1.02rem;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;font-size:1.4rem;line-height:1;color:var(--muted)}
+.faq details[open] summary::after{content:'−'}
+.faq details[open] p{margin-top:12px;color:var(--text)}
+#mapa-ciudad{height:340px;border-radius:8px;border:1px solid var(--border);z-index:1}
+.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;font-weight:600}
+.sidebar ul{list-style:none}
+.sidebar li{margin-bottom:6px}
+.sidebar a{color:var(--primary);font-size:.93rem;display:block;padding:8px 10px;border-radius:5px;transition:background .12s}
+.sidebar a:hover{background:color-mix(in srgb, var(--accent) 10%, #fff 90%);text-decoration:none}
+.cierre{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);padding:20px 26px;border-radius:8px;border-left:4px solid var(--primary);margin-top:24px;color:var(--text);font-style:italic}
+.author-byline{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--primary);padding:14px 18px;border-radius:8px;display:flex;align-items:center;gap:14px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.author-byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border)}
+.author-byline .author-info{flex:1;min-width:0}
+.author-byline .author-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.author-byline .author-name{font-size:1rem;font-weight:700;color:var(--primary);display:block;text-decoration:none;line-height:1.3}
+.author-byline .author-title{font-size:.82rem;color:var(--muted);margin-top:2px}
+.author-byline .author-date{font-size:.72rem;color:var(--muted);text-align:right;line-height:1.5;flex-shrink:0}
+@media(max-width:560px){.author-byline{flex-wrap:wrap}.author-byline .author-date{text-align:left;width:100%;margin-top:8px;border-top:1px solid var(--border);padding-top:8px}}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+.service-card{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--bg);border-radius:8px;border:1px solid var(--border);text-decoration:none;color:var(--primary);transition:transform .15s,box-shadow .15s,border-color .15s}
+.service-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:var(--accent);text-decoration:none}
+.service-card .card-title{font-weight:600;font-size:1.02rem}
+.service-card .card-arrow{font-size:1.3rem;color:var(--accent)}
+.sat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.sat-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 7%, #fff 93%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s}
+.sat-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+.sat-to-hub{display:flex;align-items:center;justify-content:space-between;gap:14px;background:color-mix(in srgb, var(--primary) 6%, #fff 94%);border-left:4px solid var(--primary);padding:14px 22px;border-radius:6px;margin:0 0 22px;font-size:.95rem;flex-wrap:wrap}
+.sat-to-hub-label{color:var(--text)}
+.sat-to-hub-link{color:var(--primary);font-weight:600;text-decoration:none;white-space:nowrap}
+.sat-to-hub-link:hover{text-decoration:underline}
+.cta-block,section.block.cta-block{background:linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 70%, var(--accent) 30%) 100%)!important;color:#fff!important;border:none!important;padding:36px 40px!important;text-align:center!important;border-radius:12px!important;box-shadow:0 4px 18px rgba(0,0,0,.12)!important;margin:32px auto!important;border-top:none!important;max-width:760px!important}
+.cta-block .cta-inner{margin:0 auto;max-width:600px;text-align:center}
+@media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
+.cta-block h2,section.block.cta-block h2{color:#fff!important;border-bottom:none!important;padding-bottom:0!important;font-size:1.55rem!important;margin-bottom:10px!important;text-shadow:0 1px 2px rgba(0,0,0,.15)!important}
+.cta-block h2::after,section.block.cta-block h2::after{display:none!important;content:none!important}
+.cta-block p,section.block.cta-block p{color:#e2e8f0!important;margin-bottom:18px!important;font-size:1rem!important;max-width:none!important}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.cta-wa,.cta-email{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .12s,box-shadow .12s}
+.cta-wa{background:#25d366;color:#fff}
+.cta-wa:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,.4);text-decoration:none}
+.cta-email{background:#fff;color:var(--primary)}
+.cta-email:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.2);text-decoration:none}
+.cta-email-note{font-size:.85rem;color:#cbd5e1;margin-top:8px;margin-bottom:0}
+.cta-email-note a{color:#93c5fd}
+.cta-email-note a:hover{color:#fff}
+/* Cities chips (S4) — internal linking bottom-of-page */
+.city-chips-section{margin:30px auto 24px;max-width:1200px}
+.city-chips-section > h2{font-family:var(--font-h);font-size:1.35rem;color:var(--primary);margin-bottom:18px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+.city-chips-zone{margin-bottom:18px}
+.city-chips-zone:last-child{margin-bottom:0}
+.city-chips-zone-title{font-family:var(--font-h);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;font-weight:700;border:none;padding:0}
+.city-chips-row{display:flex;flex-wrap:wrap;gap:8px}
+.city-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 6%, #fff 94%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s,box-shadow .12s;font-weight:500;line-height:1.2;white-space:nowrap}
+.city-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);color:var(--primary);text-decoration:none;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
+@media(max-width:560px){.city-chip{font-size:.85rem;padding:6px 12px}}
+footer{background:var(--primary);color:#cbd5e1;padding:36px 0;margin-top:50px}
+footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;align-items:start}
+footer h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+footer p,footer a{color:#cbd5e1;font-size:.88rem;line-height:1.7}
+footer a:hover{color:#fff}
+footer .copyr{grid-column:1/-1;border-top:1px solid color-mix(in srgb, var(--primary) 60%, #fff 40%);padding-top:18px;text-align:center;color:#94a3b8;font-size:.82rem}
+footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;font-style:italic}
+
+
+.mag-layout{padding:42px 24px;max-width:1320px;margin:0 auto}
+.mag-layout main{min-width:0}
+.mag-layout h1{font-size:2.8rem!important;line-height:1.15;letter-spacing:-.02em;font-weight:800}
+.mag-layout .block{padding:30px 40px;background:transparent;border:none;border-top:1px solid var(--border);border-radius:0;box-shadow:none;margin-bottom:0}
+.mag-layout .block:first-child{border-top:none}
+.mag-layout h2{font-size:1.6rem;border-bottom:none;padding-bottom:0}
+.mag-layout p:first-of-type{font-size:1.08rem;line-height:1.7;color:var(--text)}
+/* drop-cap REMOVIDO 2026-05-27 (user feedback) — afectaba a todos los párrafos de cards/bloques */
+
+</style>
+
+<link rel="stylesheet" href="/calc-scoped.css">
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header>
+<div class="container">
+<a class="brand-link" href="/">
+<svg class="logo" width="38" height="38" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <defs>
+ <linearGradient id="lg775" x1="0" y1="0" x2="1" y2="1">
+ <stop offset="0%" stop-color="var(--accent)"/>
+ <stop offset="100%" stop-color="var(--primary)"/>
+ </linearGradient>
+ </defs>
+ <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#lg775)"/>
+ <path d="M14 44 L24 30 L34 38 L44 22 L50 28" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="24" cy="30" r="3" fill="#fff"/>
+ <circle cx="34" cy="38" r="3" fill="#fff"/>
+ <circle cx="44" cy="22" r="3" fill="#fff"/>
+</svg>
+<div class="brand-line">
+ <span class="brand-name">Soil Mechanics Laboratory</span>
+ <span class="brand-sep">·</span>
+ <span class="brand-sub">Geotechnical Engineering</span>
+</div>
+</a>
+<nav class="navbar" aria-label="principal">
+<a href="/" class="nav-link">Home</a><a class="nav-link" href="/calculators/">Calculators</a>
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Services<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/soil-mechanics-laboratory/" role="menuitem">Soil Mechanics Laboratory</a><a href="/granulometry-atterberg/" role="menuitem">Granulometry & Atterberg</a><a href="/proctor-cbr-testing/" role="menuitem">Proctor & CBR Testing</a><a href="/triaxial-consolidation/" role="menuitem">Triaxial & Consolidation</a></div></div>
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Coverage<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/soil-laboratory-in-new-york/" role="menuitem" class="hub-main"><strong>New York</strong></a><a href="/soil-laboratory-in-philadelphia/" role="menuitem" class="hub-main"><strong>Philadelphia</strong></a><a href="/soil-laboratory-in-atlanta/" role="menuitem" class="hub-main"><strong>Atlanta</strong></a><a href="/soil-laboratory-in-miami/" role="menuitem" class="hub-main"><strong>Miami</strong></a><a href="/soil-laboratory-in-chicago/" role="menuitem" class="hub-main"><strong>Chicago</strong></a><a href="/soil-laboratory-in-houston/" role="menuitem" class="hub-main"><strong>Houston</strong></a><a href="/soil-laboratory-in-denver/" role="menuitem" class="hub-main"><strong>Denver</strong></a><a href="/soil-laboratory-in-los-angeles/" role="menuitem" class="hub-main"><strong>Los Angeles</strong></a><a href="/soil-laboratory-in-seattle/" role="menuitem" class="hub-main"><strong>Seattle</strong></a><a href="/soil-laboratory-in-phoenix/" role="menuitem" class="hub-main"><strong>Phoenix</strong></a></div></div>
+<a href="/equipo/james-obrien/" class="nav-link">Team</a>
+</nav>
+<button class="nav-burger" aria-label="menú" onclick="document.body.classList.toggle('nav-open')">☰</button>
+</div>
+</header>
+<main>
+<nav aria-label="breadcrumb" style="max-width:900px;margin:1.4rem auto 0;padding:0 1.5rem;font-size:.85rem;color:#64748b"><a href="/" style="color:inherit;text-decoration:none">Home</a> &rsaquo; <span>CPT Calculator — qc, fs, u2 to Geotechnical Parameter Correlations</span></nav>
+<article class="calc-scope" style="max-width:900px;margin:0 auto;padding:1.5rem">
+<h1>CPT Calculator — qc, fs, u2 to Geotechnical Parameter Correlations</h1>
+
+<p class="lead">The Cone Penetration Test (CPT) and its variant with pore pressure measurement (CPTu) provide a continuous record of three variables: tip resistance (qc), sleeve friction (fs), and pore pressure (u2). This calculator transforms these three numbers into the design parameters you need for foundation design: friction angle φ in sands, relative density Dr, undrained shear strength Su in clays, OCR, and soil type. It uses the consolidated correlations of Robertson 1990, Kulhawy & Mayne 1990, and Mayne 2007, a mandatory reference in soil mechanics studies for bridge, wind turbine, and high-rise building projects.</p>
+
+<h2>What is it and when is it applied?</h2>
+<p>The CPT drives a 60° cylindrical cone (diameter 35.7 mm, area 10 cm²) at a constant rate of 20 mm/s and records qc and fs every 1-2 cm. The CPTu adds a pressure transducer behind the tip. The advantage over the SPT is the continuity of the record and repeatability. It is applied in loose to medium sands, soft to medium clays, and silts; it loses precision in gravels (the cone refuses) and in rocks. It is mandatory in projects with Vs30 < 180 m/s for seismic classification DS 61/2011, and highly recommended in port, anchored wall, and high-rise building projects with deep foundations.</p>
+
+<h2>Applied Formulas</h2>
+<div class="formulas">
+<p><strong>Friction ratio (soil type):</strong> Rf = (fs / qc) · 100 [%]</p>
+<p><strong>Pore pressure parameter:</strong> Bq = (u2 − u0) / (qt − σv0), with qt = qc + u2·(1 − a), a ≈ 0.8</p>
+<p><strong>Friction angle in sands (Kulhawy & Mayne 1990):</strong></p>
+<p>φ' = 17.6° + 11.0° · log₁₀(qt1N), where qt1N = (qt / pa) · (pa / σ'v0)^0.5, pa = 101.3 kPa</p>
+<p><strong>Relative density (Baldi et al. 1986):</strong></p>
+<p>Dr = (1/2.91) · ln[qc / (157 · (σ'v0 / pa)^0.55)] · 100 [%]</p>
+<p><strong>Undrained shear strength in clays:</strong></p>
+<p>Su = (qt − σv0) / Nkt, with Nkt = 12-18 (typically 14 in normal clays)</p>
+<p><strong>Overconsolidation ratio OCR (Mayne 1991):</strong></p>
+<p>OCR = k · (qt − σv0) / σ'v0, k ≈ 0.33 for soft clays</p>
+<p><strong>Soil type (Robertson 1990):</strong> chart Ic = √((3.47 − log Q)² + (log F + 1.22)²), with Q = qt1 and index F = fs / (qt − σv0) · 100</p>
+</div>
+
+<div class="calc-split-layout">
+<section class="calc-widget" aria-label="Interactive CPT Robertson calculator">
+<h2>Calculate online</h2>
+<p class="calc-intro">Enter qc, fs, u2, σv and σ'v and obtain Ic, SBT Robertson, φ' or Su depending on type.</p>
+<form id="calc-form" novalidate>
+<div class="calc-row">
+<label>qc (MPa)<input type="number" id="qc" step="0.1" value="8.5" min="0.01" required></label>
+<label>fs (kPa)<input type="number" id="fs" step="1" value="85" min="0" required></label>
+<label>u2 (kPa)<input type="number" id="u2" step="1" value="60" required></label>
+<label>σv (kPa)<input type="number" id="sv" step="1" value="113" min="0.1" required></label>
+<label>σ'v (kPa)<input type="number" id="svp" step="1" value="69" min="0.1" required></label>
+</div>
+<button type="submit">Calculate</button>
+</form>
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+<p class="calc-note">Ic Robertson 1990; sand Ic&lt;2.6 uses Kulhawy-Mayne and Jamiolkowski; clay Ic≥2.6 uses Nkt=14.</p>
+</section>
+
+<aside class="visor-normas-aside" aria-label="Applicable regulatory framework">
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 View regulatory framework</button>
+<div id="visor-normas" class="visor-normas-panel"></div>
+</aside>
+</div>
+<script src="/widgets/visor-normas.js" data-slug="cpt-correlaciones"></script>
+<script>
+(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'✕ Close regulatory framework':'📖 View regulatory framework';});})();
+</script>
+<style>
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin-bottom:1rem}
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+.calc-widget button:hover{background:#115e59}
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+.calc-widget #calc-resultado:empty{display:none}
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+</style>
+<script>
+(function(){
+var f=document.getElementById('calc-form');if(!f)return;
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var qcMpa=parseFloat(document.getElementById('qc').value);
+var fs=parseFloat(document.getElementById('fs').value);
+var u2=parseFloat(document.getElementById('u2').value);
+var sv=parseFloat(document.getElementById('sv').value);
+var svp=parseFloat(document.getElementById('svp').value);
+var out=document.getElementById('calc-resultado');
+if(!isFinite(qcMpa)||!isFinite(fs)||!isFinite(u2)||!isFinite(sv)||!isFinite(svp)||qcMpa<=0||sv<=0||svp<=0){out.innerHTML='<span class="err">Enter valid values.</span>';return;}
+var Pa=100;
+var qc=qcMpa*1000;
+var Rf=fs/qc*100;
+var Bq=(u2-0)/(qc-sv);
+var num=(qc-sv)/svp;
+var Qtn=num*Math.pow(Pa/svp,0.5);
+var Fr=fs/(qc-sv)*100;
+if(Qtn<=0||Fr<=0){out.innerHTML='<span class="err">qc must be greater than σv and fs>0 for Ic.</span>';return;}
+var Ic=Math.sqrt(Math.pow(3.47-Math.log(Qtn)/Math.LN10,2)+Math.pow(Math.log(Fr)/Math.LN10+1.22,2));
+var sbt;
+if(Ic<1.31)sbt='clean sands';
+else if(Ic<2.05)sbt='sands';
+else if(Ic<2.6)sbt='silty sands';
+else if(Ic<2.95)sbt='silts';
+else if(Ic<3.6)sbt='clays';
+else sbt='peat / organic material';
+var extra='';
+if(Ic<2.6){
+var phi=Math.atan(0.1+0.38*(Math.log(qc/svp)/Math.LN10))*180/Math.PI;
+var Dr=Math.sqrt((qc/Pa)/(305*Math.pow(svp/Pa,0.5)))*100;if(Dr>100)Dr=100;
+extra='φ\' = '+phi.toFixed(1)+'° · Dr = '+Dr.toFixed(0)+' %';
+}else{
+var Nkt=14;
+var Su=(qc-sv)/Nkt;
+var Qt=(qc-sv)/svp;
+var OCR=0.25*Qt;
+extra='Su = '+Su.toFixed(0)+' kPa (Nkt=14) · OCR ≈ '+OCR.toFixed(2);
+}
+out.innerHTML='<span class="ok">Rf = '+Rf.toFixed(2)+' % · Ic = '+Ic.toFixed(2)+' · SBT: '+sbt+'</span>'+
+'Qtn = '+Qtn.toFixed(1)+' · Fr = '+Fr.toFixed(2)+' % · Bq = '+Bq.toFixed(3)+'<br>'+
+'<span style="color:#64748b;font-size:.85em">'+extra+'</span>';
+});
+})();
+</script>
+
+<h2>Calculation example</h2>
+<table class="ejemplo">
+<caption>CPT data — marine borehole, port area, hydraulic fill</caption>
+<thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Analysis depth z</td><td>6.0 m</td></tr>
+<tr><td>Water table</td><td>1.5 m below surface</td></tr>
+<tr><td>γ above water table</td><td>17 kN/m³</td></tr>
+<tr><td>γsat below water table</td><td>19.5 kN/m³</td></tr>
+<tr><td>qc measured at z=6 m</td><td>8.5 MPa</td></tr>
+<tr><td>fs measured</td><td>85 kPa</td></tr>
+<tr><td>u2 measured</td><td>60 kPa</td></tr>
+<tr><td>u0 hydrostatic</td><td>(6 − 1.5) · 9.8 = 44.1 kPa</td></tr>
+</tbody>
+</table>
+<p>Vertical stresses at z = 6 m: σv0 = 17 · 1.5 + 19.5 · 4.5 = 25.5 + 87.75 = 113.3 kPa. σ'v0 = σv0 − u0 = 113.3 − 44.1 = 69.2 kPa. We correct qc → qt: qt = qc + u2·(1 − 0.8) = 8,500 + 60·0.2 = 8,512 kPa ≈ 8.51 MPa. Rf = (fs/qc)·100 = (85/8,500)·100 = 1.0 %. Bq = (60 − 44.1)/(8,512 − 113.3) = 15.9/8,398.7 = 0.002 → almost zero, indicative of sand. qt1N = (8,512/101.3) · (101.3/69.2)^0.5 = 84.0 · 1.209 = 101.6. Friction angle: φ' = 17.6 + 11·log₁₀(101.6) = 17.6 + 11·2.007 = 17.6 + 22.1 = 39.7°. Relative density: Dr = (1/2.91)·ln[8,500/(157·(69.2/101.3)^0.55)]·100 = 0.344·ln[8,500/(157·0.823)]·100 = 0.344·ln(65.8)·100 = 0.344·4.19·100 = 143.9 % → Dr is limited to 100 % = very dense. With Rf = 1 % and high Q, Robertson places the sample in zone 6 (clean sands to silty sands).</p>
+<p class="resultado"><strong>Result:</strong> φ' ≈ 40° · Dr ≈ 100 % (very dense) · Robertson type zone 6 (sand) · Bq ≈ 0 (drained).</p>
+
+<h2>Interpretation of results</h2>
+<p>The CPT describes a very dense sand, relatively well-graded, with no generation of excess pore pressure upon penetration (Bq ≈ 0). A φ' of 40° is typical of mechanically compacted sands or ancient alluvial sediments. For shallow foundations you can use this φ' in Terzaghi/Vesic with a reduction factor of 1-2° for cone scale effects versus the actual footing diameter. Be cautious extrapolating Dr > 85 %: the Baldi method saturates and it is recommended to report "Dr > 85 % / very dense" without an exact number.</p>
+
+<h2>Reference standards</h2>
+<ul>
+<li>ASTM D5778 — Standard test method for electronic friction cone and piezocone penetration testing</li>
+<li>ISO 22476-1 — Geotechnical investigation — Field testing part 1: electrical cone and piezocone</li>
+<li>Robertson, P.K. (1990). Soil classification using the cone penetration test</li>
+<li>Kulhawy, F.H. & Mayne, P.W. (1990). Manual on estimating soil properties for foundation design, EPRI EL-6800</li>
+<li>Baldi, G. et al. (1986). Interpretation of CPT and CPTu — Part 2</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>CPT or SPT, which is better?</summary><p>CPT is more accurate, repeatable, and provides a continuous record. SPT is cheaper and detects gravels. In clean sands and soft clays CPT wins; in alluvial gravels and sanitary landfills SPT remains because the cone refuses. The ideal is to combine both in relevant projects: SPT every 1.5 m for correlation and continuous CPT for the detailed profile.</p></details>
+<details><summary>What is the Nkt factor and how do I choose it?</summary><p>Nkt relates (qt − σv0) to Su in clays. Typical values: 10-12 for very soft clays, 14-16 for normal clays, 16-20 for stiff clays. If you have a UU triaxial test or laboratory data, calibrate Nkt on site and use it throughout the profile. Without calibration, use 14 and report the ±20 % uncertainty.</p></details>
+<details><summary>How is liquefaction detected with CPT?</summary><p>Robertson & Wride 2009 provides the standard method: calculate the normalized and fines-corrected qc1Ncs, then compare with the CRR curve of the design earthquake. If CSR > CRR there is liquefaction. According to the national code, the maximum probable earthquake with Ao according to seismic zone is used. See the dedicated liquefaction calculator.</p></details>
+<details><summary>Is CPT useful for direct bearing capacity?</summary><p>Yes. Direct methods (Schmertmann 1978, Eslami & Fellenius 1997) calculate qult of a footing without going through φ: qult = kq · average qc in the influence zone (B below the base). For driven piles: the LCPC-Bustamante & Gianeselli 1982 method is the European standard and provides qs (shaft friction) and qp (tip) directly from qc.</p></details>
+
+<h2>Related calculators</h2>
+<ul>
+<li><a href="/">SPT — N60, φ, Dr, Su correlations</a></li>
+<li><a href="/">Liquefaction Seed &amp; Idriss</a></li>
+<li><a href="/">Bearing capacity Terzaghi/Vesic</a></li>
+<li><a href="/">Settlement Schmertmann</a></li>
+</ul>
+
+
+
+</article>
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+ <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Related calculators for In-Situ Testing</h3>
+ <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+ <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Grain Size Distribution Calculator — ASTM Bases and Subbases</a></li>
+ <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Direct Shear Calculator — Cohesion c and Angle φ</a></li>
+ <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">DPSH / DPL Calculator — Correlation with SPT, φ and Dr</a></li>
+ <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Sand Equivalent Calculator — SE</a></li>
+ </ul>
+ <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+ More tools at <a href="/" style="color:#0d9488">In-Situ Testing</a> · Return to
+ <a href="/" style="color:#0d9488">Soil Mechanics Laboratory index</a>
+ </p>
+</aside>
+</article>
+</main>
+<footer>
+<div class="container">
+<div>
+<h4>Soil Mechanics Laboratory</h4>
+<p>Professional geotechnical services (USA).</p>
+<p class="footer-designer-credit">Site designed by geotechnical team</p>
+</div>
+<div>
+<h4>Contact</h4>
+<p>Email: <a href="mailto:contact@soilmechaniclaboratory.com">contact@soilmechaniclaboratory.com</a></p>
+</div>
+<div>
+<h4>Services</h4>
+<p><a href="/soil-mechanics-laboratory/">Soil Mechanics Laboratory</a><br><a href="/granulometry-atterberg/">Granulometry & Atterberg</a><br><a href="/proctor-cbr-testing/">Proctor & CBR Testing</a><br><a href="/triaxial-consolidation/">Triaxial & Consolidation</a></p>
+</div>
+<div>
+<h4>Legal</h4>
+<p><a href="/sitemap.xml">Sitemap</a></p>
+</div>
+<div class="copyr">© 2026 Soil Mechanics Laboratory</div>
+</div>
+</footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://soilmechaniclaboratory.com/"}, {"@type": "ListItem", "position": 2, "name": "CPT Calculator — qc, fs, u2 to Geotechnical Parameter Correlations", "item": "https://soilmechaniclaboratory.com/blog/calculators/cpt-correlaciones/"}]}, {"@type": "Article", "headline": "CPT Calculator — qc, fs, u2 to Geotechnical Parameter Correlations", "inLanguage": "en", "description": "The Cone Penetration Test (CPT) and its variant with pore pressure measurement (CPTu) provide a continuous record of three variables: tip resistance (qc), ", "url": "https://soilmechaniclaboratory.com/blog/calculators/cpt-correlaciones/", "mainEntityOfPage": "https://soilmechaniclaboratory.com/blog/calculators/cpt-correlaciones/", "publisher": {"@type": "Organization", "name": "Soil Mechanics Laboratory", "url": "https://soilmechaniclaboratory.com/"}}]}</script>
+</body>
+</html>
