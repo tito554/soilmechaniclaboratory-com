@@ -337,8 +337,7 @@ Eugene Oregon, situated at an elevation of 430 feet in the Willamette Valley, ex
 <h2>Coverage — Eugene Oregon</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
 <script src="/js/leaflet-1ef7.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el=document.getElementById('mapa-ciudad');
   var map=L.map(el,{scrollWheelZoom:false}).setView([44.0505,-123.0951],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
@@ -352,7 +351,7 @@ Eugene Oregon, situated at an elevation of 430 feet in the Willamette Valley, ex
   window.addEventListener('resize',_fixSize);
   if(window.ResizeObserver){ new ResizeObserver(_fixSize).observe(el); }
 })();
-</script>
+});</script>
 </section>
 
 
